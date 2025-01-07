@@ -2,20 +2,22 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Ejercicio6(){
 
-    const prevValueRef = useRef(0);
+    const containerRef = useRef(null);
     const [value,setValue] = useState(0)
  
-    useEffect(() => {
-        prevValueRef.current = value; 
-    }, [value]);
+    function handleChange(e){
+        setValue(e.target.value)
+        containerRef.current.style.backgroundColor = `rgb(${value}, 100, 100)`;
+    }
         
         
 
     return(
-        <div>
-            {prevValueRef.current}<br/>
-            {value}<br/>
-            <button onClick={() => setValue(value => value + 1)}>Boton aumentar</button>
+        <div ref={containerRef}>
+            <input type="range" value={value} onChange={handleChange}></input>
         </div>
     )
+
+
+    
 }

@@ -6,6 +6,9 @@ import Ejercicio2 from "./ejercicio2";
 import Ejercicio3 from "./ejercicio3";
 import Ejercicio4 from "./ejercicio4";
 import Ejercicio5 from "./ejercicio5";
+import Ejercicio6 from "./ejercicio6";
+import Ejercicio7 from "./ejercicio7";
+import Ejercicio8 from "./ejercicio8";
 
 export default function Home() {
   return (
@@ -14,7 +17,10 @@ export default function Home() {
       {/*<Ejercicio2></Ejercicio2>*/}
       {/*<Ejercicio3></Ejercicio3>*/}
       {/*<Ejercicio4></Ejercicio4>*/}
-      <Ejercicio5></Ejercicio5>
+      {/*<Ejercicio5></Ejercicio5>*/}
+      {/*<Ejercicio6></Ejercicio6>*/}
+      {/*<Ejercicio7></Ejercicio7>*/}
+      <Ejercicio8></Ejercicio8>
     </div>
   );
 }
